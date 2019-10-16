@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .Container {
+            padding: 5% 15% 5% 15%;
+        }
+
+        .Container-row {
+            padding: 2rem 0 2rem 0;
+        }
+
+        .Message {
+            padding: 5px 1rem 5px 1rem;
+            border: 1px solid;
+            border-right: 3rem solid;
+            border-radius: 4px;
+        }
+
+        .Message--red {
+            border-color: #ff481b;
+        }
+
+        .Message--green {
+            border-color: #049401;
+        }
+
+        .Message-text {
+            font-family: sans-serif
+        }
+
+        .Message-headerText {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .Message-link {
+            text-decoration: none;
+        }
+
+        .Button {
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .Button--blue {
+            background-color: #2661a4;
+        }
+
+        .u-floatRight {
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="Container">
+    <div class="Container-row">
+        <div class="Message Message--red">
+            <p class="Message-headerText"> Incorrect email address. </p>
+            <p class="Message-text"> The email you entered does not belong to any InterNations account. Please try again
+                later.
+            </p>
+            <p class="Message-text"> If you forgot the email address with which you registered, please
+                <a class="Message-link" href="#"> request support</a>.
+            </p>
+        </div>
+    </div>
+    <div class="Container-row">
+        <div class="Message Message--green">
+            <p class="Message-headerText"> Thank you! </p>
+            <p class="Message-text"> You have succesfully sent the invitation at
+                <a class="Message-link" href="#"> my@email.com</a>.
+            </p>
+            <p class="Message-text"> All you have to do is accept the invitation and start connecting with members of
+                out community..
+            </p>
+        </div>
+    </div>
+    <div class="Container-row">
+        <button class="Button Button--blue u-floatRight" type="button"> Continue to next page</button>
+    </div>
+</div>
+</body>
+</html>
